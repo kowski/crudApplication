@@ -37,7 +37,7 @@ public class MainController {
 
 		Student n = new Student();
 		n.setName(name);
-		n.setName(surname);
+		n.setSurname(surname);
 		n.setEmail(email);
 		n.setUniversity(university);
 		studentJpaRepo.save(n);
@@ -55,14 +55,13 @@ public class MainController {
 
 	@GetMapping(path = "/all")
 	public String getAllUsers(Model model) {
-		// This returns a JSON or XML with the users 
-		model.addAttribute("students",studentJpaRepo.findAll());
+		model.addAttribute("students", studentJpaRepo.findAll());
 		return "allstudents";
 	}
 
 	@GetMapping(path = "/addstudent")
 	public String showForm(Model model) {
-		model.addAttribute("student",new Student());
+		model.addAttribute("student", new Student());
 		return "addStudent";
 	}
 
@@ -73,7 +72,19 @@ public class MainController {
 		n.setSurname(student.getSurname());
 		n.setEmail(student.getEmail());
 		studentJpaRepo.save(n);
-		return "allstudents";
+		return "redirect:/demo/all";
+	}
+
+	@GetMapping(path = "/editstudent")
+	public String edit(@RequestParam Integer id, Model model) {
+		model.addAttribute("student", studentJpaRepo.getOne(id));
+		return "editStudent";
+	}
+
+	@PostMapping(path = "/editstudent")
+	public String saveEdited(@ModelAttribute Student student) {
+		studentJpaRepo.save(student);
+		return "redirect:/demo/all";
 	}
 
 }

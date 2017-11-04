@@ -5,9 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<form action="#" th:action="@{/demo/addstudent}" method="post"
+	<form action="#" th:action="@{/demo/editstudent}" method="post"
 		th:object="${student}">
 		<table>
+		<td style="display:none;"><input type="text" th:field="*{id}" name='id' /></td>
 			<tr>
 				<td>Name:</td>
 				<td><input type="text" th:field="*{name}" name='name' /></td>
