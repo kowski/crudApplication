@@ -6,19 +6,16 @@
 </head>
 <body>
 	<h1>Students:</h1>
-
-
 	<div th:each="student : ${students}">
 		<span th:text="${student.id}"></span>
 		<span th:text="${student.name}"></span> 
 		<span th:text="${student.surname}"></span> 
 		<span th:text="${student.email}"></span> 
+		<span th:text="${'University:'+ student.university.getName() +' '+  student.university.getCity()}"></span> 
 		
 		<span><a th:href="@{'/demo/editstudent?id='+ ${student.id}}"> Edit</a></span>
-		<span><a th:href="@{'/demo/editstudent?id='+ ${student.id}}"> Delete</a></span>
+		<span><a th:href="@{'/demo/deletestudent?id='+ ${student.id}}"> Delete</a></span>
 	</div>
 	<a href="/demo/addstudent">Add new student</a>
-
-
 </body>
 </html>

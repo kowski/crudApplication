@@ -8,7 +8,7 @@
 	<form action="#" th:action="@{/demo/editstudent}" method="post"
 		th:object="${student}">
 		<table>
-		<td style="display:none;"><input type="text" th:field="*{id}" name='id' /></td>
+		<td style="display:none"><input type="text" th:field="*{id}" name='id' /></td>
 			<tr>
 				<td>Name:</td>
 				<td><input type="text" th:field="*{name}" name='name' /></td>
@@ -21,6 +21,14 @@
 				<td>Email:</td>
 				<td><input type="text" th:field="*{email}" name='email' /></td>
 			</tr> 
+			<tr>
+				<td>University:</td>
+				<td><select name="university" style="width:130px">
+						<div th:each="university : ${universities}">
+							<option th:value="${university.id}"><span th:text="${university.name} +' ' +${university.city}"></span></option>
+						</div>
+				</select></td>
+			</tr>
 			<tr>
 				<td><button type="submit" value="Submit">Submit</button></td>
 			</tr>
