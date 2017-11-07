@@ -1,7 +1,5 @@
-pl\lodz\uni\math\crudApplication\Controllers\StudentController.class
-pl\lodz\uni\math\crudApplication\App.class
 pl\lodz\uni\math\crudApplication\Controllers\MainController.class
 pl\lodz\uni\math\crudApplication\Student\StudentRepository.class
-pl\lodz\uni\math\crudApplication\Student\University.class
 pl\lodz\uni\math\crudApplication\Student\Student.class
-pl\lodz\uni\math\crudApplication\Student\UniversityRepository.class
+pl\lodz\uni\math\crudApplication\App.class
+pl\lodz\uni\math\crudApplication\Student\University.class
