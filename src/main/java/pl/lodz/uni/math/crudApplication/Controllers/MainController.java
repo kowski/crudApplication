@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import pl.lodz.uni.math.crudApplication.Repository.StudentJpaRepository;
+import pl.lodz.uni.math.crudApplication.Repository.StudentRepository;
+import pl.lodz.uni.math.crudApplication.Repository.UniversityJpaRepository;
 import pl.lodz.uni.math.crudApplication.Student.Student;
-import pl.lodz.uni.math.crudApplication.Student.StudentJpaRepository;
-import pl.lodz.uni.math.crudApplication.Student.StudentRepository;
 import pl.lodz.uni.math.crudApplication.Student.University;
-import pl.lodz.uni.math.crudApplication.Student.UniversityJpaRepository;
 
 @Controller // This means that this class is a Controller
 @RequestMapping(path = "/demo") // This means URL's start with /demo (after Application path)
