@@ -1,5 +1,11 @@
+pl\lodz\uni\math\crudApplication\Controllers\GreetingController.class
 pl\lodz\uni\math\crudApplication\Controllers\MainController.class
-pl\lodz\uni\math\crudApplication\Student\StudentRepository.class
+pl\lodz\uni\math\crudApplication\Config\SwaggerConfig.class
+pl\lodz\uni\math\crudApplication\Repository\StudentJpaRepository.class
 pl\lodz\uni\math\crudApplication\Student\Student.class
+pl\lodz\uni\math\crudApplication\Repository\StudentRepository.class
+pl\lodz\uni\math\crudApplication\Repository\UniversityJpaRepository.class
 pl\lodz\uni\math\crudApplication\App.class
+pl\lodz\uni\math\crudApplication\Security\MvcConfig.class
+pl\lodz\uni\math\crudApplication\Security\WebSecurityConfig.class
 pl\lodz\uni\math\crudApplication\Student\University.class

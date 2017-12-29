@@ -8,7 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-@Entity
+import org.springframework.context.annotation.Lazy;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+@Entity 
 public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,7 +22,7 @@ public class Student {
 	private String surname;
 	private String email;
 	@ManyToOne
-	@JoinColumn(name = "university_id")
+	@JoinColumn(name = "university_id") 
 	private University university;
 
 	public Integer getId() {
@@ -52,13 +56,12 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 	public University getUniversity() {
 		return university;
 	}
 
 	public void setUniversity(University university) {
 		this.university = university;
-	}
+	} 
 
 }

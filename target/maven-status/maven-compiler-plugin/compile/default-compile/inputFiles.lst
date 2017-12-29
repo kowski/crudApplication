@@ -1,8 +1,11 @@
-C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Student\StudentJpaRepository.java
-C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Student\StudentRepository.java
-C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Student\UniversityJpaRepository.java
+C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Repository\StudentRepository.java
+C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Config\SwaggerConfig.java
 C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Controllers\MainController.java
 C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\App.java
+C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Repository\StudentJpaRepository.java
+C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Repository\UniversityJpaRepository.java
+C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Security\MvcConfig.java
 C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Security\WebSecurityConfig.java
 C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Student\Student.java
 C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Student\University.java
+C:\Users\HP\eclipse-workspace\crudApplication\src\main\java\pl\lodz\uni\math\crudApplication\Controllers\GreetingController.java

@@ -1,5 +1,5 @@
 package pl.lodz.uni.math.crudApplication.Student;
- 
+
 import java.util.List;
 
 import javax.persistence.Column;
@@ -9,16 +9,22 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.springframework.context.annotation.Lazy;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 public class University {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "UNIVERSITY_ID")
 	private Integer id;
+	
 	private String name;
 	private String city;
+	
 	@OneToMany(mappedBy = "university")
-	private List<Student> students;
+	@JsonBackReference
 
 	public Integer getId() {
 		return id;
@@ -42,14 +48,6 @@ public class University {
 
 	public void setCity(String city) {
 		this.city = city;
-	}
-
-	public List<Student> getStudents() {
-		return students;
-	}
-
-	public void setStudents(List<Student> students) {
-		this.students = students;
 	}
 
 }

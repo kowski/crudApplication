@@ -95,5 +95,5 @@ public class MainController {
 		studentJpaRepo.delete(id);
 		return "redirect:/demo/all";
 	}
- 
+
 }
